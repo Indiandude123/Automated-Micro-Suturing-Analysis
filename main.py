@@ -31,7 +31,7 @@ def generate_part2_csv(image_dir, input_csv_path, output_csv_file_name="output_c
                 csv_writer.writerow(['img1_name', 'img2_name', 'output_distance', 'output_angle'])
 
     with open(input_csv_path, 'r') as csv_file:
-        csv_reader = csv.DictReader(csv_file)
+        csv_reader = csv.DictReader(csv_file) 
         for row in csv_reader:
             # img1_name = row['img1_name']
             # img2_name = row['img2_name']
